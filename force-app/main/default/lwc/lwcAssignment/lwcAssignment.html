@@ -1,0 +1,12 @@
+<template>
+<lightning-card>
+    <lightning-record-form record-id={recordId}
+        object-api-name="Opportunity" fields={opp.data} columns="2" mode="edit">
+    </lightning-record-form>
+    <template if:true={recordId3} >
+        <lightning-record-form record-id={recordId3}
+        object-api-name="Lead" fields={leads.data} columns="2" mode="edit">
+    </lightning-record-form>
+    </template>
+</lightning-card>
+</template>
